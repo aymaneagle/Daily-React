@@ -16,6 +16,7 @@ import use_Ref from "./components/useRefHook/Use_Ref.jsx";
 import Use_Ref from "./components/useRefHook/Use_Ref.jsx";
 import UseMemoHook from "./components/useMemoHook/UseMemoHook.jsx";
 import SimpleForm from "./components/Form/SimpleForm.jsx";
+import CompleteForm from "./components/Form/CompleteForm.jsx";
 function App() {
 
 
@@ -34,7 +35,8 @@ function App() {
             {/*<ParentComponent />*/}
             {/*<Use_Ref/>*/}
             {/*<UseMemoHook/>*/}
-            <SimpleForm/>
+            {/*<SimpleForm/>*/}
+            <CompleteForm/>
 
         </>
     )

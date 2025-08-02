@@ -42,7 +42,8 @@ const CompleteForm = () => {
                            type="text"
                            name="firstName"
                            placeholder="Enter First Name"
-                           value={values.firstName} onChange={(e)=>handleChange(e)}
+                           value={values.firstName}
+                           onChange={(e)=>handleChange(e)}
                     />
 
                     <label htmlFor="lastName">First Name</label>
@@ -50,22 +51,27 @@ const CompleteForm = () => {
                            type="text"
                            name="lastName"
                            placeholder="Enter Last Name"
-                           value={values.lastName} onChange={(e)=>handleChange(e)}
+                           value={values.lastName}
+                           onChange={(e)=>handleChange(e)}
                     />
                     <label htmlFor="email">Email</label>
                     <input className ="border px-2 py-1"
                            type="email"
                            name="email"
                            placeholder="Enter Email"
-                           value={values.email} onChange={(e)=>handleChange(e)}
+                           value={values.email}
+                           onChange={(e)=>handleChange(e)}
                     />
                     <div>
                         <label htmlFor="gender">Gender</label>
-                        <input className ="border px-2 py-1" type="radio" name="gender" value="male" onChange={(e)=>handleChange(e)}/>
+                        <input className ="border px-2 py-1" type="radio" name="gender" value="male"
+                               onChange={(e)=>handleChange(e)}/>
                         Male
-                        <input className ="border px-2 py-1" type="radio" name="gender" value="female" onChange={(e)=>handleChange(e)}/>
+                        <input className ="border px-2 py-1" type="radio" name="gender" value="female"
+                               onChange={(e)=>handleChange(e)}/>
                         Female
-                        <input className ="border px-2 py-1" type="radio" name="gender" value="other" onChange={(e)=>handleChange(e)}/>
+                        <input className ="border px-2 py-1" type="radio" name="gender" value="other"
+                               onChange={(e)=>handleChange(e)}/>
                         Others
                     </div>
                     <label htmlFor="contact">contact</label>
@@ -73,12 +79,14 @@ const CompleteForm = () => {
                            type="contact"
                            name="contact"
                            placeholder="Enter your contact"
-                           value={values.contact} onChange={(e)=>handleChange(e)}
+                           value={values.contact}
+                           onChange={(e)=>handleChange(e)}
                     />
                     <label htmlFor="subject" className = "font-semibold">Subject</label>
                     <select name="subject"
                             id="subject"
-                            value={values.subject} onChange={(e)=>handleChange(e)}
+                            value={values.subject}
+                            onChange={(e)=>handleChange(e)}
                     >
                         <option value="">Select a subject</option>
                         <option value="math">Math</option>
@@ -88,19 +96,23 @@ const CompleteForm = () => {
 
                     <label htmlFor="resume">Resume</label>
                     <input className ="border px-2 py-1"
-                           type="file"
+                           type="text"
+                           placeholder="Enter Resume"
                            name="resume"
-                           value={values.resume} onChange={(e)=>handleChange(e)}
+                           value={values.resume}
+                           onChange={(e)=>handleChange(e)}
                     />
                     <label htmlFor="url">URL</label>
                     <input className ="border px-2 py-1"
                            type="text"
                            placeholder="Enter URL"
                            name="url"
-                           value={values.url} onChange={(e)=>handleChange(e)}
+                           value={values.url}
+                           onChange={(e)=>handleChange(e)}
                     />
                     <label htmlFor="about">About</label>
-                    <textarea name="about" placeholder="Enter Description" onChange={(e)=>handleChange(e)}></textarea>
+                    <textarea name="about" placeholder="Enter Description"
+                              onChange={(e)=>handleChange(e)}></textarea>
                     <div className="flex space-x-2 justify-center items-center">
                         <button
                             className="px-2 py-1 w-full bg-green-500"
